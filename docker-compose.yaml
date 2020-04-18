@@ -4,9 +4,4 @@ services:
   python_dev:
     build: ./compose/python_dev
     working_dir: /python-broadlink/cli
-    depends_on:
-      - redis
     entrypoint: ["sh", "-c", "sleep infinity"]
-  python:
-    #https://hub.docker.com/_/postgres/
-    image: postgres:9.6.3
